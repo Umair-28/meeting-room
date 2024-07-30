@@ -1,0 +1,145 @@
+.jumbotron {
+  position: relative;
+  height: 90vh; /* Full viewport height */
+}
+
+.form-section {
+  background-image: url('/images/5.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  opacity: 0.9;
+}
+
+.text-content {
+  position: relative; /* Changed to relative for responsiveness */
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: flex-start; /* Align text to the start of the container */
+  color: black; /* Adjust text color for contrast */
+}
+
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.main-section {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.overlay-image-1, .overlay-image-2, .overlay-image-3 {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+@media (min-width: 992px) {
+  .overlay-image-1 {
+      position: absolute;
+      top: 36px;
+      left: 46%;
+      z-index: 2;
+  }
+
+  .overlay-image-2 {
+      position: absolute;
+      top: 50px;
+      left: 74%;
+      z-index: 1;
+  }
+
+  .overlay-image-3 {
+      position: absolute;
+      top: 250px;
+      right: 26%;
+      z-index: 3;
+  }
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  background-color: #f8f9fa; /* Light background color for the card body */
+  border-radius: 5px; /* Slight rounding of corners */
+}
+
+.card-title {
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary color for the title */
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
